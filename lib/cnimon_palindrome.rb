@@ -3,7 +3,7 @@ require "cnimon_palindrome/version"
 module CnimonPalindrome
   # Returns true for a palindrome, false otherwise.
   def palindrome?
-    processed_content == processed_content.reverse
+    processed_content == processed_content.reverse && !processed_content.empty?
   end
 
   private
